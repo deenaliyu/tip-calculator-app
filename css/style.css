@@ -1,0 +1,106 @@
+.attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+html{
+    min-height: 100%;
+  }
+  @font-face {
+    font-family: face;
+    src: url("../font/space-mono-v6-latin-regular.woff");
+  }
+  body{
+      background-color: hsl(185, 41%, 84%) !important;
+      font-family: face !important;
+  }
+.card{
+    width: 55%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    background-color:hsl(0, 0%, 100%) ;
+    padding: 30px;
+    border-radius: 15px !important;
+}
+.tip{
+  background-color: hsl(183, 100%, 15%);
+  border-radius: 10px;
+  padding: 20px;
+}
+.select-tip{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+.btn-dark:active{
+  background-color:hsl(172, 67%, 45%)!important;
+  border: 1px solid hsl(185, 41%, 84%) !important;
+  color: hsl(183, 100%, 15%) !important ;
+}
+ .btn-success{
+  background-color:  hsl(172, 67%, 45%)!important;
+  border: 1px solid hsl(172, 67%, 45%) !important;
+}
+
+.btn-success:active{
+  background-color: hsl(185, 41%, 84%)!important;
+  border: 1px solid hsl(185, 41%, 84%) !important;
+}
+.btn-check:focus + .btn, .btn:focus {
+  box-shadow: none !important;
+}
+span{
+  background-color: hsl(189, 41%, 97%) !important;
+}
+input{
+  color: hsl(183, 100%, 15%) !important;
+  text-align: right;
+  font-weight: bolder !important;
+  box-shadow: none !important;
+  background-color: hsl(189, 41%, 97%) !important;
+ 
+}
+.input-group:focus, .input-group:active{
+  border:2px solid hsl(172, 67%, 45%)!important;
+}
+label{
+  font-weight: bold;
+}
+.tip p{
+  color: white;
+  margin-bottom: 0px !important;
+  margin-top: 1rem;
+}
+.tip small{
+ color:hsl(186, 14%, 43%);
+}
+.tip .percent p{
+  color:  hsl(172, 67%, 45%);
+  font-size: 34px;
+}
+.tip .percent b{
+  color:  hsl(172, 67%, 45%);
+  font-size: 22px;
+  font-weight: normal;
+}
+
+  
+@media (max-width: 500px){
+ .text{
+    margin-bottom: 2rem;
+  }
+  .select-tip{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+  }
+  .tip .percent p{
+    color:  hsl(172, 67%, 45%);
+    font-size: 24px;
+  }
+  .tip .percent b{
+    color:  hsl(172, 67%, 45%);
+    font-size: 24px;
+    font-weight: normal;
+  }
+    
+}
